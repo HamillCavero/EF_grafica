@@ -84,30 +84,6 @@ i32 main() {
 		//std::cout << models[i] << std::endl;
 	}
 
-	/*u32 buffer;
-	const u32 smat4 = sizeof(glm::mat4);
-	glGenBuffers(1, &buffer);
-	glBindBuffer(GL_ARRAY_BUFFER, buffer);
-	glBufferData(GL_ARRAY_BUFFER, amount * smat4,
-		&models[0],GL_STATIC_DRAW);
-	for (u32 i = 0; i < rock->meshes.size(); ++i)	{
-		glBindVertexArray(rock->meshes[i].Vao);
-		glEnableVertexAttribArray(3);
-		glVertexAttribPointer(3, 4, GL_FLOAT, GL_FALSE, smat4, (void*)0);
-		glEnableVertexAttribArray(4);
-		glVertexAttribPointer(4, 4, GL_FLOAT, GL_FALSE, smat4, (void*)smat4);
-		glEnableVertexAttribArray(5);
-		glVertexAttribPointer(5, 4, GL_FLOAT, GL_FALSE, smat4, (void*)(2*smat4));
-		glEnableVertexAttribArray(6);
-		glVertexAttribPointer(6, 4, GL_FLOAT, GL_FALSE, smat4, (void*)(3*smat4));
-
-		glVertexAttribDivisor(3, 1);
-		glVertexAttribDivisor(4, 1);
-		glVertexAttribDivisor(5, 1);
-		glVertexAttribDivisor(6, 1);
-
-		glBindVertexArray(0);
-	}*/
 	glm::vec3 lightPos   = glm::vec3(1.0f);
 	glm::vec3 lightColor = glm::vec3(1.0f);
 
